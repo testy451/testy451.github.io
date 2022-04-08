@@ -1,0 +1,284 @@
+{
+	"abi": [
+		{
+			"inputs": [
+			{
+				"internalType": "contract IStdReference",
+				"name": "_ref",
+				"type": "address"
+			}
+			],
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+			],
+			"name": "OwnershipTransferred",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "rate",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_dxtc3Amount",
+				"type": "uint256"
+			}
+			],
+			"name": "RewardEvent",
+			"type": "event"
+		},
+		{
+			"inputs": [
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "burnAmt",
+				"type": "uint256"
+			}
+			],
+			"name": "allowedToBurn",
+			"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "burnAddress",
+			"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+			{
+				"internalType": "address",
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokenAmt",
+				"type": "uint256"
+			}
+			],
+			"name": "burnERC20",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "dxtc3",
+			"outputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "",
+				"type": "address"
+			}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "execute",
+			"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+			],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "fee1",
+			"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "fee2",
+			"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "owner",
+			"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "renounceOwnership",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+			],
+			"name": "symbols",
+			"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+			],
+			"name": "transferOwnership",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+			],
+			"name": "userBurns",
+			"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "amt",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "time",
+				"type": "uint256"
+			}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+			{
+				"internalType": "address",
+				"name": "_token",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "symbol",
+				"type": "string"
+			}
+			],
+			"name": "whitelistToken",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+			],
+			"name": "whitelisted",
+			"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}
