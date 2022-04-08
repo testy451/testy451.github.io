@@ -232,8 +232,8 @@ function App() {
               <Route exact path="/">
                 <Redirect to="stake" />
               </Route>
-              <Route path="/presale">
-                <Presale />
+              <Route path="/mint">
+                <Mint />
               </Route>
               <Route path="/calculator">
                 <Calculator />

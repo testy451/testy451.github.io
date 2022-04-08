@@ -54,7 +54,7 @@ function NavContent() {
     if (currentPath.indexOf("stake") >= 0 && page === "stake") {
       return true;
     }
-    if (currentPath.indexOf("presale") >= 0 && page === "presale") {
+    if (currentPath.indexOf("mint") >= 0 && page === "mint") {
       return true;
     }
     if (currentPath.indexOf("calculator") >= 0 && page === "calculator") {
