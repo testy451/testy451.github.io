@@ -118,10 +118,10 @@ function NavContent() {
 
               <Link
                 component={NavLink}
-                id="presale-nav"
-                to="/presale"
+                id="-nav"mint
+                to="/mint"
                 isActive={(match, location) => {
-                  return checkPage(match, location, "presale");
+                  return checkPage(match, location, "mint");
                 }}
                 className={`button-dapp-menu ${isActive ? "active" : ""}`}
               >
@@ -160,7 +160,7 @@ function NavContent() {
                   COMMUNITY STAKING
                 </Typography>
               </Link>
-{/*  for presale. Code 2022.02.20
+{/*  for mint. Code 2022.02.20
               <div className="dapp-menu-data discounts">
                 <div className="bond-discounts">
                   <Typography variant="body2">Mint discounts</Typography>
