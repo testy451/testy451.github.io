@@ -118,7 +118,7 @@ function NavContent() {
 
               <Link
                 component={NavLink}
-                id="-nav"mint
+                id="presale-nav"
                 to="/mint"
                 isActive={(match, location) => {
                   return checkPage(match, location, "mint");
