@@ -127,7 +127,7 @@ function NavContent() {
               >
                 <Typography variant="h6">
                   <SvgIcon color="primary" component={WrapIcon} />
-                  MINT DXTC
+                  MINT DXTC3
                 </Typography>
               </Link>
 
